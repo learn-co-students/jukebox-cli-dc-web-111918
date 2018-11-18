@@ -48,7 +48,7 @@ def run(songs)
   input = ""
   while input
     puts "Please enter a command:"
-    entered_command = gets.downcase.strip
+    entered_command = gets.chomp
     if entered_command == 'list'
       list(songs)
     elsif entered_command == 'play'
